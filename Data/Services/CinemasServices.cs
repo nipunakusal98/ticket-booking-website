@@ -13,7 +13,8 @@ namespace eTickets.Data.Services
         }
         public void Add(Cinema cinema)
         {
-            throw new NotImplementedException();
+            _context.Cinemas.Add(cinema);
+            _context.SaveChanges();
         }
 
         public void Delete(int id)
